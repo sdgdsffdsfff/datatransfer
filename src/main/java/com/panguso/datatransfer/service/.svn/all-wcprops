@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service
+END
+DyFTPDownloadService.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/DyFTPDownloadService.java
+END
+BigDBDownloadService.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/BigDBDownloadService.java
+END
+CommonDownloadService.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/searchdev/!svn/ver/30193/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/CommonDownloadService.java
+END
+CommonIndexService.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/CommonIndexService.java
+END
+DyFTPImportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/DyFTPImportService.java
+END
+BigFTPDownloadService.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/BigFTPDownloadService.java
+END
+CommonImportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/CommonImportService.java
+END
+DyIndexService.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/searchdev/!svn/ver/30193/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/DyIndexService.java
+END
+BigFTPImportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/BigFTPImportService.java
+END
+CommonService.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/searchdev/!svn/ver/30193/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/CommonService.java
+END
+BigIndexService.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/searchdev/!svn/ver/30193/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/BigIndexService.java
+END
+DyDBDownloadService.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/service/DyDBDownloadService.java
+END

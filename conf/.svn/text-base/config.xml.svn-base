@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<common>
+		<!-- 每次过程执行失败以后，重做之前要休眠的时间 -->
+		<sleep>10</sleep>
+		<!-- 过程执行失败后的最大尝试次数 -->
+		<max_try>3</max_try>
+		<!-- 执行数据库操作时，每次获取的数据集合大小 -->
+		<sql_limit>10000</sql_limit>
+		<!-- 本工程安装后，所处的根目录的绝对路径 -->
+		<!--  <config_path>/application/search/standard</config_path> -->
+		<config_path>D:\SvnRepository\branch\StandardDatatransfer</config_path>
+		<debug>true</debug>
+	</common>
+
+
+	<!-- 入库涉及到的表信息 -->
+	<tables>
+		<!-- 数据表的个数 -->
+		<table_num>10</table_num>
+
+		<table id="prod_video">
+			<name>prod_video</name>       		
+			<ds>ds3</ds>				  	
+			<primay_key>GoodsID</primay_key>		
+			<fields>GoodsID;Name;Type;Price;Star;DayPlayNum;TotalPlayNum;DayDownNum;TotalDownNum;Date;Label;Brief;Hot;ChildCategory;FullDevice;imgurl1;imgurl2;cid;playtime</fields>
+			<intfields>Star;Hot;cid;playtime</intfields>
+			<floatfields>Price</floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>Brief:200</field_length>
+		</table>
+
+		<table id="prod_video_copy">
+			<name>prod_video_copy</name>       		
+			<ds>ds3</ds>				  	
+			<primay_key>GoodsID</primay_key>		
+			<fields>GoodsID;Name;Type;Price;Star;DayPlayNum;TotalPlayNum;DayDownNum;TotalDownNum;Date;Label;Brief;Hot;ChildCategory;FullDevice;imgurl1;imgurl2;cid;playtime</fields>
+			<intfields>Star;Hot;cid;playtime</intfields>
+			<floatfields>Price</floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>Brief:200</field_length>
+		</table>
+
+		<table id="prod_read">
+			<name>prod_read</name>       		
+			<ds>ds3</ds>				  	
+			<primay_key>GoodsID</primay_key>		
+			<fields>GoodsID;ProdID;NAME;NameBoost;Singer;SingerBoost;Label;otitle</fields>
+			<intfields></intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>otitle:5</field_length>
+		</table>
+
+		<table id="prod_read_copy">
+			<name>prod_read_copy</name>       		
+			<ds>ds3</ds>				  	
+			<primay_key>GoodsID</primay_key>		
+			<fields>GoodsID;ProdID;NAME;NameBoost;Singer;SingerBoost;Label;otitle</fields>
+			<intfields></intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>otitle:5</field_length>
+		</table>
+
+		<table id="dy_read_copy">
+			<name>dy_read_copy</name>       		
+			<ds>ds3</ds>				  	
+			<primay_key>GoodsID</primay_key>		
+			<fields>GoodsID;ProdID;NAME;NameBoost;Singer;SingerBoost;Label;otitle</fields>
+			<intfields></intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>otitle:5</field_length>
+		</table>
+
+		<table id="operate_log_prod_read">
+			<name>operate_log_prod_read</name>
+			<ds>ds3</ds>
+			<primay_key>operateid</primay_key>
+			<fields>operateid;contentid;operation;operatetime</fields>
+			<intfields></intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length></field_length>
+		</table>
+
+		<table id="operate_log_prod_video">
+			<name>operate_log_prod_video</name>
+			<ds>ds3</ds>
+			<primay_key>operateid</primay_key>
+			<fields>operateid;contentid;operation;operatetime</fields>
+			<intfields></intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length></field_length>
+		</table>
+
+
+		
+		<table id="bigjiaoliu">
+			<name>bigjiaoliu</name>       		
+			<ds>ds2</ds>				  	
+			<primay_key>uniqid</primay_key>		
+			<fields>uniqid;id;type;name;loginname;photo;branchid;isbranchmanager;branchlocation;portraitTiny;portraitMiddle;portraitLarge;branchIntroduction;clerkUserId;branchStatus</fields>
+			<intfields>isbranchmanager;branchStatus</intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>name:5;</field_length>
+		</table>
+		
+		<table id="dyjiaoliu">
+			<name>dyjiaoliu</name>
+			<ds>ds2</ds>
+			<primay_key>uniqid</primay_key>
+			<fields>uniqid;id;type;name;loginname;photo;branchid;isbranchmanager;branchlocation;portraitTiny;portraitMiddle;portraitLarge;branchIntroduction;clerkUserId;branchStatus</fields>
+			<intfields>isbranchmanager;branchStatus</intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>name:5;</field_length>
+		</table>
+
+		<table id="dy_jiaoliu">
+			<name>dy_jiaoliu</name>
+			<ds>ds2</ds>
+			<primay_key>uniqid</primay_key>
+			<fields>uniqid;id;type;name;loginname;photo;branchid;isbranchmanager;branchlocation;portraitTiny;portraitMiddle;portraitLarge;branchIntroduction;clerkUserId;branchStatus</fields>
+			<intfields>isbranchmanager;branchStatus</intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>name:5;</field_length>
+		</table>
+
+
+		<!--  
+		<table id=>
+				
+			<name></name>    				表名
+			<ds></ds>							数据表所属的数据库的名称 
+			<primay_key></primay_key>			主键
+			<fields></intfields>		字段
+			<floatfields></floatfields>				字段中浮点型字段
+			<longfields></longfields>				字段中长整型字段
+			<datetimefields></datetimefields>		字段中日期型字段
+			<timefields></timefields>				字段中时间型字段
+			<blobfields></blobfields>				字段中二进制字段
+			<field_length></field_length>	各字段的长度
+		</table>
+		-->
+
+		<table id="dyjiaoliu_copy">
+			<name>dyjiaoliu_copy</name>
+			<ds>ds2</ds>
+			<primay_key>uniqid</primay_key>
+			<fields>uniqid;id;type;name</fields>
+			<intfields>age</intfields>
+			<floatfields>score</floatfields>
+			<longfields></longfields>
+			<datetimefields>time</datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>name:6;</field_length>
+		</table>
+				
+		<table id="table2">
+			<name>table2</name>
+			<ds>ds2</ds>
+			<primay_key>ColumnCode</primay_key>
+			<fields>ColumnCode;TextValue</fields>
+			<intfields></intfields>
+			<floatfields></floatfields>
+			<longfields></longfields>
+			<datetimefields></datetimefields>
+			<timefields></timefields>
+			<blobfields></blobfields>
+			<field_length>name:20;description:200</field_length>
+		</table>
+	</tables>
+	
+	
+	<!-- 索引job -->
+	<indexjobs>
+		<!-- job个数 -->
+		<job_num>1</job_num>
+
+		<indexjob id="bigindex">
+			<!-- job名称 -->	
+			<name>bigindex</name>
+			<!-- job处理类,用于传prefix参数 -->
+			<job_class>com.panguso.datatransfer.job.CommonDataTransferJob</job_class>
+			<!-- 建索引类 -->
+			<index_class>com.panguso.datatransfer.service.CommonIndexService</index_class>
+			<!-- 命令值，一个01字符串，长度与上面要执行的步骤相同-->
+			<cmd>001</cmd>
+			<!-- 接入成功后建立索引要执行的命令 -->
+			<indexcmd>/application/search/index/bigindexJob.sh</indexcmd>
+			
+			<wait_for_jobs_enable>true</wait_for_jobs_enable>
+			
+			<!-- 与增量索引相关，即要等待的增量下载job -->
+			<wait_for_jobs>bigvideo;bigread</wait_for_jobs>
+			
+			<!-- 与全量索引相关的数据表，用于全量索引job处理增量数据表时使用 -->
+			<involve_tables></involve_tables>
+			
+			<!-- job调度周期 秒 分 时 天 月 -->
+			<crontab>* * * * * ?</crontab>
+		</indexjob>	
+		
+		<indexjob id="dyindex">
+			<!-- job名称 -->	
+			<name>dyindex</name>
+			<!-- job处理类,用于传prefix参数 -->
+			<job_class>com.panguso.datatransfer.job.CommonDataTransferJob</job_class>
+
+			<!-- 建索引类 -->
+			<index_class>com.panguso.datatransfer.service.CommonIndexService</index_class>
+			<!-- 命令值，一个01字符串，长度与上面要执行的步骤相同-->
+			<cmd>001</cmd>
+			<!-- 接入成功后建立索引要执行的命令 -->
+			<indexcmd>/application/search/index/bigindexJob.sh</indexcmd>
+			
+			<wait_for_jobs_enable>true</wait_for_jobs_enable>
+			
+			<!-- 与增量索引相关，即要等待的增量下载job -->
+			<wait_for_jobs>dyvideo;dyread</wait_for_jobs>
+			
+			<!-- job调度周期 秒 分 时 天 月 -->
+			<crontab>* * * * * ?</crontab>
+		</indexjob>
+	</indexjobs>
+	
+	
+	
+	
+	<!-- 全量接入job -->
+	<bigjobs>
+		<!-- job个数 -->
+		<job_num>0</job_num>
+		
+		<bigjob id="bigvideo">
+			<!-- job名称 -->	
+			<name>bigvideo</name>
+			<!-- job处理类,用于传prefix参数 -->
+			<job_class>com.panguso.datatransfer.job.CommonDataTransferJob</job_class>
+			<!-- 数据接入的下载类 -->
+			<download_class>com.panguso.datatransfer.service.BigDBDownloadService</download_class>
+			<!-- 数据接入的数据导入类 -->
+			<import_class></import_class>
+
+			<!-- 命令值，一个01字符串，长度与上面要执行的步骤相同-->
+			<cmd>100</cmd>
+			<!-- job类型，取值范围为db 或 ftp 或者是index -->
+			<type>DB</type>
+			<!-- DB接入类型，要有下面的配置 -->
+			<db>
+				<!-- 数据来源表 -->
+				<from_table>prod_video_copy</from_table>
+				<!-- 数据接入表,增量job写增量数据表名，全赖那个job写全量数据表名 -->
+				<to_table>prod_video</to_table>
+				<!-- 数据来源表被接入时要忽略的字段，忽略字段以从1开始，每个来源表对应一行，tag名为 表名_skip 格式 --> 
+				<prod_video_skip></prod_video_skip>   
+				<!-- 数据来源表被接入时要被映射成其他名字的字段，每个来源表对应一行，tag名为 表名_map 格式 --> 
+				<prod_video_map></prod_video_map>
+			</db>
+			
+			<!-- job调度周期 秒 分 时 天 月 -->
+			<crontab>0 53 * * * ?</crontab>
+		</bigjob>	
+		
+
+		<bigjob id="bigread">
+			<!-- job名称 -->	
+			<name>bigread</name>
+			<!-- job处理类,用于传prefix参数 -->
+			<job_class>com.panguso.datatransfer.job.CommonDataTransferJob</job_class>
+			<!-- 数据接入的下载类 -->
+			<download_class>com.panguso.datatransfer.service.BigDBDownloadService</download_class>
+			<!-- 数据接入的数据导入类 -->
+			<import_class></import_class>
+			<!-- 命令值，一个01字符串，长度与上面要执行的步骤相同-->
+			<cmd>100</cmd>
+			<!-- job类型，取值范围为db 或 ftp 或者是index -->
+			<type>DB</type>
+			<!-- DB接入类型，要有下面的配置 -->
+			<db>
+				<!-- 数据来源表 -->
+				<from_table>prod_read_copy</from_table>
+				<!-- 数据接入表,增量job写增量数据表名，全赖那个job写全量数据表名 -->
+				<to_table>prod_read</to_table>
+				<!-- 数据来源表被接入时要忽略的字段，忽略字段以从1开始，每个来源表对应一行，tag名为 表名_skip 格式 --> 
+				<prod_video_skip></prod_video_skip>   
+				<!-- 数据来源表被接入时要被映射成其他名字的字段，每个来源表对应一行，tag名为 表名_map 格式 --> 
+				<prod_video_map></prod_video_map>
+			</db>
+			
+			<!-- job调度周期 秒 分 时 天 月 -->
+			<crontab>0 53 * * * ?</crontab>
+		</bigjob>	
+		
+		<bigjob id="bigvideo">
+			<!-- job名称 -->	
+			<name>bigvideo</name>
+			<!-- job处理类,用于传prefix参数 -->
+			<job_class>com.panguso.datatransfer.job.CommonDataTransferJob</job_class>
+			<!-- 数据接入的下载类 -->
+			<download_class>com.panguso.datatransfer.service.BigFtpDownloadService</download_class>
+			<!-- 数据接入的数据导入类 -->
+			<import_class>com.panguso.datatransfer.service.BigFtpImportService</import_class>
+			<!-- 命令值，一个01字符串，长度与上面要执行的步骤相同-->
+			<cmd>010</cmd>
+			<!-- job类型，取值范围为db 或 ftp 或者是index -->
+			<type>FTP</type>
+			<!-- 数据接入时，下载到本地的文件的编码格式，是针对FTP类型的 -->
+			<encode>gbk</encode>
+			<!-- 数据接入时，下载到本地的文件的字段分隔符，是针对FTP类型的 -->
+			<separator>0x01</separator>
+			<ftp>
+				 <!-- FTP的具体类型，取值范围为ftp 或 sftp -->
+				<type>ftp</type>
+				<host>127.0.0.1</host>
+				<port>21</port>
+				<username>user</username>
+				<password>password</password>
+				<!-- FTP接入类型，数据文件的后缀如txt,dat -->
+				<data_suffix>txt</data_suffix>
+				<encode>utf-8</encode>
+				<remotepath>/</remotepath>
+				<!-- 是否手动配置下载目录 -->
+				<downloadDicEnable>true</downloadDicEnable>
+				<!-- 要下载的目录 -->
+				<dics>video</dics>
+				<!-- 待下载目录与目录下要下载的文件的对应，每个目录对应一行，tag以 目录_downloadfile为名 -->
+				<video_downloadfile>video</video_downloadfile>
+				<!-- 要下载到本地的目录路径 -->
+				<localpath>d:/ftp</localpath>
+				<!-- 是否支持断点续传 -->
+				<issupportbroken>false</issupportbroken>
+				<!-- 文件与接入表名的映射， 按照文档约定，文件名都是唯一的 -->
+				<file_table_map>video:prod_video</file_table_map>
+				<!-- 文件对应于数据表主键的列，为原始数据的列数 --> 
+				<file_primary_field>video:1;</file_primary_field>
+				<!-- 目录_文件名_skip 可选   注意dy与 big的字段序号相差一位（op）-->
+				<file_skip></file_skip> 
+				<!-- 文件名对应于索引类型， 仅增量接入方式需要设置 --> 
+				<index_type_map></index_type_map> 
+			</ftp>
+			
+			<!-- job调度周期 秒 分 时 天 月 -->
+			<crontab>0 40 * * * ?</crontab>
+
+		</bigjob>	
+	</bigjobs>
+	
+	<dyjobs>
+		<indexcmd>/application/search/index/dyindexJob.sh</indexcmd>
+		<job_num>0</job_num>
+		
+		<dyjob id="dyread">
+			<!-- job名称 -->	
+			<name>dyread</name>
+			<!-- job处理类,用于传prefix参数 -->
+			<job_class>com.panguso.datatransfer.job.CommonDataTransferJob</job_class>
+			<!-- 数据接入的下载类 -->
+			<download_class>com.panguso.datatransfer.service.DyDBDownloadService</download_class>
+			<!-- 数据接入的数据导入类 -->
+			<import_class></import_class>
+			<!-- 命令值，一个01字符串，长度与上面要执行的步骤相同-->
+			<cmd>100</cmd>
+			<!-- 数据接入下载类型，取值范围为db 或 ftp 或者是index -->
+			<type>DB</type>
+			<!-- 数据表名对应的索引类型，与goodsdelete有关 仅增量接入方式需要设置 --> 
+			<involve_index_type></involve_index_type> 
+			<!-- DB接入类型，要有下面的配置 -->
+			<db>
+				<!-- 数据来源表 -->
+				<from_table>prod_read</from_table>
+				<!-- 数据接入表,增量job写增量数据表名，全赖那个job写全量数据表名 -->
+				<to_table>read_copy</to_table>
+				<!-- 数据来源表被接入时要忽略的字段，忽略字段以从1开始，每个来源表对应一行，tag名为 表名_skip 格式 --> 
+				<prod_read_skip></prod_read_skip>   
+				<!-- 数据来源表被接入时要被映射成其他名字的字段，每个来源表对应一行，tag名为 表名_map 格式 --> 
+				<prod_read_map></prod_read_map>
+			</db>
+			
+			<!-- job调度周期 秒 分 时 天 月 -->
+			<crontab>0 48 * * * ?</crontab>
+		</dyjob>	
+		
+		<dyjob id="dyvideo">
+			<!-- job名称 -->	
+			<name>dyvideo</name>
+			<!-- job处理类,用于传prefix参数 -->
+			<job_class>com.panguso.datatransfer.job.CommonDataTransferJob</job_class>
+			<!-- 数据接入的下载类 -->
+			<download_class>com.panguso.datatransfer.service.DyDBDownloadService</download_class>
+			<!-- 数据接入的数据导入类 -->
+			<import_class></import_class>
+			<!-- 命令值，一个01字符串，长度与上面要执行的步骤相同-->
+			<cmd>100</cmd>
+			<!-- job类型，取值范围为db 或 ftp 或者是index -->
+			<type>DB</type>
+			<!-- 数据表名对应的索引类型，与goodsdelete有关 仅增量接入方式需要设置 --> 
+			<involve_index_type></involve_index_type> 			
+			<!-- DB接入类型，要有下面的配置 -->
+			<db>
+				<!-- 数据来源表 -->
+				<from_table>prod_video</from_table>
+				<!-- 数据接入表,增量job写增量数据表名，全赖那个job写全量数据表名 -->
+				<to_table>video_copy</to_table>
+				<!-- 数据来源表被接入时要忽略的字段，忽略字段以从1开始，每个来源表对应一行，tag名为 表名_skip 格式 --> 
+				<prod_video_skip></prod_video_skip>   
+				<!-- 数据来源表被接入时要被映射成其他名字的字段，每个来源表对应一行，tag名为 表名_map 格式 --> 
+				<prod_video_map></prod_video_map>
+			</db>
+			
+			<!-- job调度周期 秒 分 时 天 月 -->
+			<crontab>0 10 * * * ?</crontab>
+		</dyjob>	
+		
+		
+		<dyjob id="dyjob1">
+			<name>dyjob1</name>
+			<job_class>com.panguso.datatransfer.job.DyTestDatatransferJob</job_class>    <!-- 若为空，使用默认接入类 -->
+			<download_class>com.panguso.datatransfer.service.DyFtpDownloadService</download_class>    <!-- 若为空，使用默认接入类 -->
+			<import_class>com.panguso.datatransfer.service.DyFtpImportService</import_class>    <!-- 若为空，使用默认接入类 -->
+			<type>FTP</type>
+			<cmd>110</cmd>
+			<!-- 数据表名对应的索引类型，与goodsdelete有关 仅增量接入方式需要设置 --> 
+			<involve_index_type></involve_index_type> 
+			<encode>utf-8</encode>       <!-- 下载到本地的文件的编码格式          对于FTP类型有用 -->
+			<separator>\t</separator>    <!-- 下载到本地的文件的字段分隔符号  对于FTP类型有用 -->
+			<ftp>
+				<type>ftp</type>  <!-- ftp/sftp -->
+				<host>127.0.0.1</host>
+				<port>21</port>
+				<username>user</username>
+				<password>password</password>
+				<data_suffix>txt</data_suffix>
+				<encode>utf-8</encode>
+				<remotepath>/</remotepath>
+				<downloadDic_switch>on</downloadDic_switch>
+				<dics>dy</dics>
+				<dy_downloadfile>mm;read</dy_downloadfile>
+				<localpath>D:/Users/liubing/Data</localpath>
+				<issupportbroken>false</issupportbroken>
+				<file_table_map>mm:dyjiaoliu_copy;read:dyjiaoliu_copy</file_table_map> <!-- 按照文档约定，文件名都是唯一的 -->
+				<file_primary_field>mm:1;read:2</file_primary_field>  <!-- 这个定义为原始数据的列数 -->
+				<file_skip>mm:20;read:20</file_skip>   <!-- 目录_文件名_skip 可选   注意dy与 big的字段序号相差一位（op）-->
+			</ftp>
+			
+			<crontab>0 43 * * * ?</crontab>
+		</dyjob>	
+	</dyjobs>
+	
+	
+	<ds>
+		<ds_num>3</ds_num>
+		<item>
+			<name>ds1</name>
+			<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+			<url>jdbc:mysql://10.8.2.40:3306/resource?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=round
+			</url>
+			<username>pangu</username>
+			<password>pangu</password>
+			<timeout>120</timeout>
+		</item>
+	
+		<item>
+			<name>ds2</name>
+			<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+			<url>jdbc:mysql://10.10.66.35:3306/12371?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=round
+			</url>
+			<username>root</username>
+			<password>rts_123</password>
+		</item>
+		
+		<item>
+			<name>ds3</name>
+			<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+			<url>jdbc:mysql://10.10.66.35:3306/mm?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=round
+			</url>
+			<username>root</username>
+			<password>rts_123</password>
+		</item>
+	</ds>
+	
+</Config>

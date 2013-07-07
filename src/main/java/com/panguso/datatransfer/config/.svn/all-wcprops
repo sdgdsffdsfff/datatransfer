@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/config
+END
+GlobalVariable.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/config/GlobalVariable.java
+END
+Common.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/config/Common.java
+END
+LogFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/searchdev/!svn/ver/28346/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/config/LogFactory.java
+END
+PropertyFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/searchdev/!svn/ver/28346/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/config/PropertyFactory.java
+END
+ConfigFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/searchdev/!svn/ver/30444/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/config/ConfigFactory.java
+END

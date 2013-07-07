@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf
+END
+FtpConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/searchdev/!svn/ver/30193/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf/FtpConf.java
+END
+JobConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf/JobConf.java
+END
+DBDownloadConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf/DBDownloadConf.java
+END
+DownloadFileInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/searchdev/!svn/ver/28346/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf/DownloadFileInfo.java
+END
+FtpDownloadConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/searchdev/!svn/ver/32344/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf/FtpDownloadConf.java
+END
+FieldConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/searchdev/!svn/ver/30193/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf/FieldConf.java
+END
+IndexConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf/IndexConf.java
+END
+TableConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/conf/TableConf.java
+END

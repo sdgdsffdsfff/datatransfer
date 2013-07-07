@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/searchdev/!svn/ver/29408/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/ftp
+END
+FTPClientFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/searchdev/!svn/ver/28346/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/ftp/FTPClientFactory.java
+END
+CommonFTPClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/searchdev/!svn/ver/28346/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/ftp/CommonFTPClient.java
+END
+BaseFTPClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/searchdev/!svn/ver/28346/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/ftp/BaseFTPClient.java
+END
+SFTPClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/searchdev/!svn/ver/29408/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/ftp/SFTPClient.java
+END
+FTPStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/searchdev/!svn/ver/28346/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/ftp/FTPStatus.java
+END

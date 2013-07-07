@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/util
+END
+MD5Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/searchdev/!svn/ver/28346/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/util/MD5Util.java
+END
+IOUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/util/IOUtil.java
+END
+CommonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/util/CommonUtil.java
+END
+DateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/util/DateUtil.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/searchdev/!svn/ver/32771/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/util/FileUtil.java
+END
+SQLUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/searchdev/!svn/ver/32974/vertical/plat/datatransfer/branch/StandardDatatransfer/src/main/java/com/panguso/datatransfer/util/SQLUtil.java
+END
